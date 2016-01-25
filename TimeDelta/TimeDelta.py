@@ -15,5 +15,5 @@ def selectFiles(delta, buffer=1, unit="hours"):
         dateoffile = datetime.datetime.strptime(os.path.basename(separatefile), FILE_FORMAT)
         if dateoffile < dmin and dateoffile > dmax:
             out.append(dateoffile)
-    return dateoffile
+    return separatefile
 
